@@ -1,0 +1,42 @@
+{
+  "name": "nodejs-cli-template",
+  "type": "module",
+  "engines": {
+    "node": "20.14.0"
+  },
+  "version": "1.0.0",
+  "description": "node.jsのCLIアプリ開発用",
+  "main": "index.js",
+  "scripts": {
+    "execute-sample": "node --loader ts-node/esm src/scripts/sample.ts",
+    "lint:prettier": "prettier --write 'src/**/*.{js,ts,tsx}'",
+    "lint:eslint": "eslint --fix 'src/**/*.{js,ts,tsx}'",
+    "lint": "npm run lint:prettier && npm run lint:eslint",
+    "prepare": "husky"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/50ra4/nodejs-cli-template.git"
+  },
+  "author": "50ra4",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/50ra4/nodejs-cli-template/issues"
+  },
+  "homepage": "https://github.com/50ra4/nodejs-cli-template#readme",
+  "devDependencies": {
+    "@types/node": "20.14.5",
+    "@typescript-eslint/eslint-plugin": "7.13.1",
+    "@typescript-eslint/parser": "7.13.1",
+    "eslint": "8.57.0",
+    "eslint-config-prettier": "9.1.0",
+    "eslint-import-resolver-typescript": "3.6.1",
+    "eslint-plugin-import": "2.29.1",
+    "eslint-plugin-promise": "6.2.0",
+    "husky": "9.0.11",
+    "lint-staged": "15.2.7",
+    "prettier": "3.3.2",
+    "ts-node": "10.9.2",
+    "typescript": "5.4.5"
+  }
+}
