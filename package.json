@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/50ra4/nodejs-cli-template#readme",
   "devDependencies": {
+    "@types/aws-lambda": "8.10.140",
     "@types/node": "20.14.5",
     "@typescript-eslint/eslint-plugin": "7.13.1",
     "@typescript-eslint/parser": "7.13.1",
@@ -38,5 +39,9 @@
     "prettier": "3.3.2",
     "ts-node": "10.9.2",
     "typescript": "5.4.5"
+  },
+  "dependencies": {
+    "@aws-sdk/client-codebuild": "3.599.0",
+    "@aws-sdk/client-dynamodb": "3.598.0"
   }
 }
