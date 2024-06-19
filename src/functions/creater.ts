@@ -9,7 +9,7 @@ import type {
   CIEventBridgeResult,
 } from '@/features/ci/utilityType';
 
-const region = process.env.REGION;
+const region = process.env.AWS_REGION;
 
 // 設定が必要な環境変数一覧
 const serviceRole = process.env.CODE_BUILD_ROLE_ARN;
