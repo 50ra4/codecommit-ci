@@ -1,8 +1,5 @@
 import type { CodeBuildClient } from '@aws-sdk/client-codebuild';
-import {
-  CreateProjectCommand,
-  StartBuildCommand,
-} from '@aws-sdk/client-codebuild';
+import { CreateProjectCommand } from '@aws-sdk/client-codebuild';
 
 /**
  *
@@ -73,7 +70,4 @@ export const createBuildProject = async ({
       },
     }),
   );
-
-  // 作成完了後にビルドを実行する
-  await codeBuild.send(new StartBuildCommand({ projectName: projectName }));
 };
